@@ -1,4 +1,4 @@
-*{
+{
     margin: 0;
     box-sizing: border-box;
 }
@@ -374,5 +374,3 @@ body{
     font-size: 0.95rem;
     letter-spacing: 0.02em;
 }
-
-
