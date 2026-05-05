@@ -374,3 +374,18 @@ body{
     font-size: 0.95rem;
     letter-spacing: 0.02em;
 }
+
+.tituloPrincial{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 3%;
+}
+
+.imagensPrincipal{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imagensPrincipal > img{
+    width: 30%;
+    margin: 10%;
+}
