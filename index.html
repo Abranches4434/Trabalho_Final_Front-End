@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src = "/js/script.js"></script>
     <title>FCW Cursos</title>
 </head>
@@ -11,7 +11,8 @@
    <header class="header">
     <div class="container header-content">
       <a href="../index.html" class="logo">
-        <img src="./img/Logo.png" alt="Logo FCW Cursos Online">
+
+        <img src="./img/Logo_white_text.png" alt="Logo FCW Cursos Online">
       </a>
       <nav class="nav">
         <a  href="../index.html" class="nav-link">Home</a>
@@ -21,30 +22,90 @@
       <a href="../index.html#start" class="btn-primary">Começar Agora</a>
     </div>
   </header>
-
-    <main> 
-      <article>
-        <h1 class = "tituloPrincial">Cursos Online</h1>
-      </article>
-      
-      <div class="imagensPrincipal">
-        <img class = "imagensPrincipal__fotos" src="img/FullStack.png" alt="Curso Desenvolvimento Full Stack">
-        <img class = "imagensPrincipal__fotos"src="img/PowerBI.png" alt="Power BI">
-        <img class = "imagensPrincipal__fotos"src="img/Analise_de_dados.png" alt="Analista de Dados">
-        <img class = "imagensPrincipal__fotos"src="img/cloudSecurity.png" alt="Cloud Security">
-      </div>
+  <section class="hero-index" id="start">
+        <div class="container hero-index__conteudo">
+            <h1 class="hero-index__titulo">Aprenda tecnologia do zero</h1>
+            <p class="hero-index__subtitulo">
+                Cursos práticos e acessíveis para você entrar no mercado de trabalho com confiança.
+            </p>
+            <a href="#cursos" class="btn-primary">Ver cursos</a>
+        </div>
+    </section>
+ 
+    <!-- Cursos -->
+    <main id="cursos" class="section">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2 class="section-title">Nossos Cursos</h2>
+                <p class="section-subtitle">Escolha o curso ideal para você e comece hoje</p>
+            </div>
+ 
+            <div class="grid-cursos">
+ 
+                <div class="curso-card">
+                    <img src="img/FullStack.png" alt="Curso Desenvolvimento Full Stack" class="curso-card__img">
+                    <div class="curso-card__corpo">
+                        <h3 class="curso-card__titulo">Desenvolvimento Full Stack</h3>
+                        <p class="curso-card__texto">Aprenda front-end e back-end do zero e construa aplicações completas.</p>
+                        <a href="pages/contact.html" class="curso-card__btn">Quero me inscrever</a>
+                    </div>
+                </div>
+ 
+                <div class="curso-card">
+                    <img src="img/PowerBI.png" alt="Curso Power BI" class="curso-card__img">
+                    <div class="curso-card__corpo">
+                        <h3 class="curso-card__titulo">Power BI</h3>
+                        <p class="curso-card__texto">Crie dashboards profissionais e tome decisões baseadas em dados.</p>
+                        <a href="pages/contact.html" class="curso-card__btn">Quero me inscrever</a>
+                    </div>
+                </div>
+ 
+                <div class="curso-card">
+                    <img src="img/Analise_de_dados.png" alt="Curso Análise de Dados" class="curso-card__img">
+                    <div class="curso-card__corpo">
+                        <h3 class="curso-card__titulo">Análise de Dados</h3>
+                        <p class="curso-card__texto">Domine as principais ferramentas de análise e visualização de dados.</p>
+                        <a href="pages/contact.html" class="curso-card__btn">Quero me inscrever</a>
+                    </div>
+                </div>
+ 
+                <div class="curso-card">
+                    <img src="img/cloudSecurity.png" alt="Curso Cloud Security" class="curso-card__img">
+                    <div class="curso-card__corpo">
+                        <h3 class="curso-card__titulo">Cloud Security</h3>
+                        <p class="curso-card__texto">Aprenda a proteger infraestruturas em nuvem com as melhores práticas.</p>
+                        <a href="pages/contact.html" class="curso-card__btn">Quero me inscrever</a>
+                    </div>
+                </div>
+ 
+            </div>
+        </div>
     </main>
-    <footer>  </footer>
-
-    <div vw class="enabled">
-  <div vw-access-button class="active"></div>
-  <div vw-plugin-wrapper>
-    <div class="vw-plugin-top-wrapper"></div>
-  </div>
-</div>
-<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-<script>
-  new window.VLibras.Widget('https://vlibras.gov.br/app');
-</script>
+ 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="grid-4">
+                <div>
+                    <div class="footer-logo">
+                        <img src="img/Logo.png" alt="Logo FCW Cursos Online">
+                        <span class="logo-text">FCW - Cursos Online</span>
+                    </div>
+                    <p class="footer-text">Transformando vidas através da educação em tecnologia.</p>
+                </div>
+                <div>
+                    <h4 class="footer-title">Contato</h4>
+                    <ul class="footer-list">
+                        <li>📧 contato@fcw.org</li>
+                        <li>📱 (24) 99999-9999</li>
+                        <li>📍 Petrópolis, RJ</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 FCW. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
