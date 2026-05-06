@@ -1,0 +1,99 @@
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+    backdrop-filter: blur(6px);
+}
+
+.modal-box {
+    display: flex;
+    width: 700px;
+    max-width: 90%;
+    margin: 5% auto;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* LADO ESQUERDO */
+.modal-left {
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    border-right: 1px solid #ddd;
+}
+
+.modal-img {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 15px;
+}
+
+.modal-texto {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* LADO DIREITO */
+.modal-right {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modal-right input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.btn-enviar {
+    display: inline-block;
+    padding: 8px 20px;
+    background: linear-gradient(90deg, #1a5fa8 0%, #0d2f5e 100%);
+    color: #ffffff;
+    border-radius: 24px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: filter 0.2s;
+}
+
+.btn-enviar:hover {
+    filter: brightness(1.2);
+    box-shadow: 0 0 40px blue;
+    transition: 1s;
+}
+
+.fechar {
+    align-self: flex-end;
+    font-size: 24px;
+    font-weight: bold;
+    color: transparent; 
+    cursor: pointer;
+    transition: all 0.2s ease;
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+/* Hover */
+.fechar:hover {
+    color: #111827;
+    /* mais escuro */
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Clique */
+.fechar:active {
+    transform: scale(0.9);
+}
+
+/* Acessibilidade (teclado) */
+.fechar:focus {
+    outline: 2px solid #2563eb;
+}
