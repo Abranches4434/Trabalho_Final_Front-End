@@ -185,11 +185,11 @@ body:focus-visible{
     align-items: center;
     gap: 16px;
     margin-bottom: 24px;
+    transition: 1s;
 }
 
 .mission-item:hover{
     transform: scale(1.4);
-    transition: 1s;
     background-color: rgb(25, 25, 92);
     border-radius: 6px;
     padding: 3%;
@@ -292,12 +292,13 @@ body:focus-visible{
     background-color: #0d2f5eb2;
     padding: 6%;
     border-radius: 30px;
+    transition: 0.5s;
 }
 
 .team-member:hover {
-    transform: scale(140%);
+    transform: scale(120%);
     text-align: center;
-    transition: 0.5s;
+    box-shadow: 0 0 10px 10px rgba(0, 219, 248, 0.479);
 }
 
 
