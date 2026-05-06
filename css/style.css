@@ -106,23 +106,25 @@ body:focus-visible{
     filter: brightness(1.2);
     transform: scale(1.2);
     transition: 0.5s;
+    box-shadow: 0 0 100px 5px rgba(0, 219, 248, 0.479);
 }
 
 .hero-about {
-    background: linear-gradient(135deg, #f0f6ff 0%, #d6e8ff 50%, #ffffff 100%);
     padding: 80px 24px;
+    backdrop-filter: blur(1px);
+    background-color: rgba(4, 82, 192, 0.418);
 }
 
 .hero-title {
     font-size: 3rem;
     font-weight: bold;
-    color: #0d2f5e;
+    color: #ffffff;
     margin-bottom: 24px;
 }
 
 .hero-subtitle {
     font-size: 1.25rem;
-    color: #4b5563;
+    color: #ffffff;
     max-width: 768px;
     margin: 0 auto;
 }
@@ -133,11 +135,10 @@ body:focus-visible{
 }
 
 .section.bg-gray {
-    background: #f4f7fb;
+    backdrop-filter: blur(3px);
 }
 
 .section.bg-gradient-light {
-    background: linear-gradient(135deg, #f0f6ff 0%, #d6e8ff 100%);
 }
 
 .section-title {
@@ -161,7 +162,7 @@ body:focus-visible{
 
 .text-lg {
     font-size: 1.125rem;
-    color: #4b5563;
+    color: #fff;
 }
 
 .mb-4 {
@@ -221,10 +222,23 @@ body:focus-visible{
     color: #d6e8ff;
 }
 
+@keyframes glowRGB {
+    0% {box-shadow: 0 0 20px 20px rgba(0, 219, 248, 0.479);}
+    20% {box-shadow: 0 0 20px 20px  rgba(1, 108, 248, 0.479);}
+    40% {box-shadow: 0 0 20px 20px rgba(55, 0, 255, 0.479);}
+    60% {box-shadow: 0 0 20px 20px rgb(38, 0, 255);}
+    80% {box-shadow: 0 0 20px 20px rgba(1, 108, 248, 0.479);}
+    100% {box-shadow: 0 0 20px 20px rgba(0, 219, 248, 0.479);}
+}
+
 /* Timeline */
 .timeline {
     max-width: 768px;
     margin: 0 auto;
+    box-shadow: 0 0 20px rgba(0, 219, 248, 0.479);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.808);
+    padding: 2%;
 }
 
 .timeline-item {
@@ -453,9 +467,8 @@ body:focus-visible{
 
 .curso-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 24px rgba(13, 47, 94, 0.15);
     transition-duration: 1s;
-    box-shadow: 15px 15px 20px rgba(31, 31, 31, 0.479);
+    box-shadow: 15px 15px 20px rgba(0, 219, 248, 0.479);
 }
 
 .curso-card__img {
