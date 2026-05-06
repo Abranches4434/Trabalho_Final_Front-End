@@ -288,30 +288,32 @@ body:focus-visible{
 
 .team-member {
     text-align: center;
+    color: white;
+    background-color: #0d2f5eb2;
+    padding: 6%;
+    border-radius: 30px;
 }
 
 .team-member:hover {
     transform: scale(140%);
     text-align: center;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 
 .team-name {
     font-size: 1.25rem;
     font-weight: bold;
-    color: #111827;
     margin-bottom: 4px;
 }
 
 .team-role {
-    color: #1a5fa8;
+    color: #05baf1;
     margin-bottom: 8px;
 }
 
 .team-bio {
     font-size: 0.875rem;
-    color: #4b5563;
 }
 
 .grid-3 {
@@ -329,7 +331,7 @@ body:focus-visible{
 .value-card:hover {
     transform: translateY(-5px);
     transition-duration: 0.5s;
-    box-shadow: 15px 15px 20px  rgba(31, 31, 31, 0.490);
+    box-shadow: 15px 15px 20px  rgba(0, 219, 248, 0.479);
 }
 
 .value-icon {
@@ -528,7 +530,7 @@ body:focus-visible{
     top: 0;
     left: 0;
     width: 100%;
-    background: url("../img/Plano_de_Fundo.png") center/cover;
+    background: url("../img/Plano_de_Fundo.png") center/cover repeat;
     height: 120%;
     z-index: -1;
 }
