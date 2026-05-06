@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <script src = "/js/script.js"></script>
+    <script src="/js/script.js"></script>
     <title>FCW Cursos</title>
 </head>
-<body>
-  <div class="parallax"></div>
-   <header class="header">
-    <div class="container header-content">
-      <a href="../index.html" class="logo">
 
-        <img src="./img/Logo_white_text.png" alt="Logo FCW Cursos Online">
-      </a>
-      <nav class="nav">
-        <a  href="../index.html" class="nav-link">Home</a>
-        <a href="./pages/aboutus.html" class="nav-link">Sobre</a>
-        <a href="./pages/contact.html" class="nav-link">Contato</a>
-      </nav>
-      <a href="../index.html#start" class="btn-primary">Começar Agora</a>
-    </div>
-  </header>
-  <section class="hero-index" id="start">
+<body>
+    <div class="parallax"></div>
+    <header class="header">
+        <div class="container header-content">
+            <a href="../index.html" class="logo">
+
+                <img src="./img/Logo_white_text.png" alt="Logo FCW Cursos Online">
+            </a>
+            <nav class="nav">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="./pages/aboutus.html" class="nav-link">Sobre</a>
+                <a href="./pages/contact.html" class="nav-link">Contato</a>
+            </nav>
+            <a href="../index.html#start" class="btn-primary">Começar Agora</a>
+        </div>
+    </header>
+    <section class="hero-index" id="start">
         <div class="container hero-index__conteudo">
             <h1 class="hero-index__titulo">Aprenda tecnologia do zero</h1>
             <p class="hero-index__subtitulo">
@@ -32,7 +34,7 @@
             <a href="#cursos" class="btn-primary">Ver cursos</a>
         </div>
     </section>
- 
+
     <!-- Cursos -->
     <main id="cursos" class="section">
         <div class="container">
@@ -40,49 +42,77 @@
                 <h2 class="section-title">Nossos Cursos</h2>
                 <p class="section-subtitle">Escolha o curso ideal para você e comece hoje</p>
             </div>
- 
+
             <div class="grid-cursos">
- 
+
                 <div class="curso-card">
                     <img src="img/FullStack.png" alt="Curso Desenvolvimento Full Stack" class="curso-card__img">
                     <div class="curso-card__corpo">
                         <h3 class="curso-card__titulo">Desenvolvimento Full Stack</h3>
-                        <p class="curso-card__texto">Aprenda front-end e back-end do zero e construa aplicações completas.</p>
-                        <a href="pages/contact.html" class="curso-card__btn">Quero me inscrever</a>
+                        <p class="curso-card__texto">Aprenda front-end e back-end do zero e construa aplicações
+                            completas.</p>
+                        <button class="curso-card__btn"
+                            onclick="abrirModal('Desenvolvimento Full Stack','img/FullStack.png','Aprenda front-end e back-end do zero e construa aplicações completas.')">
+                            Quero me inscrever
+                        </button>
                     </div>
                 </div>
- 
+
                 <div class="curso-card">
                     <img src="img/PowerBI.png" alt="Curso Power BI" class="curso-card__img">
                     <div class="curso-card__corpo">
                         <h3 class="curso-card__titulo">Power BI</h3>
-                        <p class="curso-card__texto">Crie dashboards profissionais e tome decisões baseadas em dados.</p>
-                        <a href="pages/contact.html" class="curso-card__btn">Quero me inscrever</a>
+                        <p class="curso-card__texto">
+                            Crie dashboards profissionais e tome decisões baseadas em dados.
+                        </p>
+                        <button class="curso-card__btn" onclick="abrirModal(
+                        'Power BI',
+                        'img/PowerBI.png',
+                        `Aprenda a transformar dados em dashboards interativos e relatórios profissionais.
+                        
+                        Carga horária: 50 horas
+
+                        Benefícios:                        
+                        Melhor tomada de decisões
+                        Relatórios profissionais 
+                        Destaque no mercado
+                        `
+                        )">
+                            Quero me inscrever
+                        </button>
                     </div>
                 </div>
- 
+
                 <div class="curso-card">
                     <img src="img/Analise_de_dados.png" alt="Curso Análise de Dados" class="curso-card__img">
                     <div class="curso-card__corpo">
                         <h3 class="curso-card__titulo">Análise de Dados</h3>
-                        <p class="curso-card__texto">Domine as principais ferramentas de análise e visualização de dados.</p>
-                        <a href="pages/contact.html" class="curso-card__btn">Quero me inscrever</a>
+                        <p class="curso-card__texto">Domine as principais ferramentas de análise e visualização de
+                            dados.</p>
+                        <button class="curso-card__btn"
+                            onclick="abrirModal('Análise de Dados','img/Analise_de_dados.png','Domine as principais ferramentas de análise e visualização de dados.')">
+                            Quero me inscrever
+                        </button>
                     </div>
                 </div>
- 
+
                 <div class="curso-card">
                     <img src="img/cloudSecurity.png" alt="Curso Cloud Security" class="curso-card__img">
                     <div class="curso-card__corpo">
                         <h3 class="curso-card__titulo">Cloud Security</h3>
-                        <p class="curso-card__texto">Aprenda a proteger infraestruturas em nuvem com as melhores práticas.</p>
-                        <a href="pages/contact.html" class="curso-card__btn">Quero me inscrever</a>
+                        <p class="curso-card__texto">Aprenda a proteger infraestruturas em nuvem com as melhores
+                            práticas.</p>
+                        <button class="curso-card__btn"
+                            onclick="abrirModal('Cloud Security','img/cloudSecurity.png','Aprenda a proteger infraestruturas em nuvem com as melhores práticas.')">
+                            Quero me inscrever
+                        </button>
                     </div>
                 </div>
- 
+
             </div>
         </div>
     </main>
- 
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -108,15 +138,41 @@
             </div>
         </div>
     </footer>
-     <div vw class="enabled">
-  <div vw-access-button class="active"></div>
-  <div vw-plugin-wrapper>
-    <div class="vw-plugin-top-wrapper"></div>
-  </div>
-</div>
-<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-<script>
-  new window.VLibras.Widget('https://vlibras.gov.br/app');
-</script>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <div id="modal" class="modal">
+        <div class="modal-box">
+
+            <!-- ESQUERDA -->
+            <div class="modal-left">
+                <img id="modal-img" src="modal" class="modal-img">
+                <div class="modal-texto">
+                    <h2 id="titulo-modal">Curso</h2>
+                    <p id="descricao-modal"></p>
+                </div>
+            </div>
+
+            <!-- DIREITA -->
+            <div class="modal-right">
+                <span class="fechar" onclick="fecharModal()">&times;</span>
+
+                <input type="text" placeholder="Seu nome">
+                <input type="email" placeholder="Seu email">
+                <input type="tel" placeholder="Seu telefone">
+
+                <button class="btn-enviar">Enviar</button>
+            </div>
+
+        </div>
+    </div>
 </body>
+
 </html>
