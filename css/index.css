@@ -3,8 +3,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: url("../img/Plano_de_Fundo.png") center/cover repeat;
-    height: 120%;
+    background: url("../img/Plano_de_Fundo.png") center/cover no-repeat;
+    height: 140%;
     z-index: -1;
 }
 
